@@ -1,3 +1,4 @@
+
 .top-buttons {
       text-align: center;
       padding: 0px 0px 10px 0px;
@@ -33,4 +34,15 @@
     width:5px;
     height:auto;
     display:inline-block;
+}
+
+
+
+.footer {
+    margin-top: 30px;
+    padding: 10px 0 0 0;
+    background: #ff9900;
+    color: #fff;
+    height: 100px;
+
 }
