@@ -1,17 +1,17 @@
     
     
-    <?php include('config/header.php'); ?>
-    <?php include('config/nav.php');?>
+    <?php include('templates/header.php'); ?>
+    <?php include('templates/nav.php');?>
     
     <!-- Content -->
     <div class="container">
 
-      <form class="form-signin">
+      <form class="form-signin" action="process.php" method="post">
         <h2 class="form-signin-heading">Please sign in</h2>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="text" class="form-control" name="username" id="inputUsername3" placeholder="Username">
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" class="form-control" name="password" id="inputPassword3" placeholder="Password">
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Remember me
@@ -23,4 +23,4 @@
     </div> <!-- /container -->
     
 
-    <?php include('config/footer.php') ?>
+    <?php include('templates/footer.php') ?>

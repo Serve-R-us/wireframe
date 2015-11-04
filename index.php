@@ -1,17 +1,28 @@
+<?php
+    require_once('/config/connection.php');
+?>
     
-    
-    <?php include('config/header.php'); ?>
-    <?php include('config/nav.php');?>
+    <?php include('templates/header.php'); ?>
+    <?php include('templates/nav.php');?>
     
     <div class="container">
-        
-        
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="top-buttons">
+       <?php
+        if (!isset($_SESSION['username'])) { ?>
+
+            <!-- Main component for a primary marketing message or call to action -->
+            <div class="top-buttons">
               <a href="login.php"><button type="button" class="btn btn-primary btn-lg">Login</button></a>
               <div class="divider"/></div>
               <a href="signup.php"><button type="button" class="btn btn-primary btn-lg">Sign Up</button></a>
       </div>
+      
+      <?php }
+        else {
+            echo "<p>". $_SESSION['username'] . "/ <a href='logout.php'>Log out</a>" . "</p>";
+        } ?>
+        
+        
+        
       <div class="jumbotron">
           
         <h1>Trick or Eat <?php echo 'test'; ?></h1>
@@ -50,4 +61,4 @@
       
     </div> <!-- /container -->
 
-    <?php include('config/footer.php') ?>
+    <?php include('templates/footer.php') ?>
