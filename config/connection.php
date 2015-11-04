@@ -1,8 +1,7 @@
 <?php
 
-session_start();
+    session_start();
 
-$dbc = mysqli_connect('localhost', 'dev', 'thepassword', 'wireframe') OR die('Could not connect because: ' . mysqli_connect_error());
-
+    $dbc = mysqli_connect('localhost', 'root', 'PositiveFish', 'serverus') OR die('Could not connect because: ' . mysqli_connect_error());
 
 ?>
