@@ -1,82 +1,22 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>Static Top Navbar Example for Bootstrap</title>
-
-
-     <script src="js/bootstrap.min.js"></script>
-    
-     <link href="css/bootstrap.min.css" rel="stylesheet">        
-        
-        <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
+  	<?php echo 'test'; ?>
 
     <div class="container">
         
       <!-- Main component for a primary marketing message or call to action -->
       <div class="top-buttons">
-              <button type="button" class="btn btn-primary btn-lg">Login</button>
+              <a href="login.php"><button type="button" class="btn btn-primary btn-lg">Login</button></a>
               <div class="divider"/></div>
-              <button type="button" class="btn btn-primary btn-lg">Sign Up</button>
+              <a href="signup.php"><button type="button" class="btn btn-primary btn-lg">Sign Up</button></a>
       </div>
       <div class="jumbotron">
         <h1>Trick or Eat</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum porttitor nisl, sed luctus nibh ornare id. Suspendisse vel nibh aliquet augue condimentum egestas auctor at enim. Phasellus placerat justo nunc, nec finibus nunc porttitor id. Morbi arcu diam, aliquet ac neque sed, porta varius ipsum. Curabitur imperdiet vitae magna nec congue. Nam in consectetur nunc. Aenean quis leo at libero egestas pulvinar.</p>
+        <p>Suspendisse eget ante id quam scelerisque vulputate vel eu massa. Sed elit dolor, ultricies in tellus ac, tempor tincidunt lacus. Nam est elit, rutrum sed tellus ac, hendrerit fringilla metus. Sed rhoncus erat vitae cursus pretium.</p>
         <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+          <a class="btn btn-lg btn-primary" href="about.php" role="button">View more information &raquo;</a>
         </p>
       </div>
       
