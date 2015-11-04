@@ -1,0 +1,36 @@
+.top-buttons {
+      text-align: center;
+      padding: 0px 0px 10px 0px;
+      font-size: 21px;
+      color: #000;
+    margin: 0 auto;
+
+}
+
+.login-button {
+      padding: 0 0 0 0;
+      font-size: 21px;
+      color: #000;
+}
+.signup-button {
+      padding: 0px 0 0 0px;
+      font-size: 21px;
+      color: #000;
+}
+
+
+.marketing {
+         width: 80%;
+      margin: 40px 0;
+      margin: 0 auto;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
