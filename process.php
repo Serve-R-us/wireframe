@@ -1,14 +1,7 @@
-<?php include('/config/connection.php'); ?>
+<?php include('config/connection.php'); ?>
 <?php include('templates/header.php'); ?>
-<?php include('templates/nav.php'); ?>
-
-<?php
-    include('config/connection.php');
-?>
-    <?php include('templates/header.php'); ?>
-    <?php include('templates/nav.php'); ?>
+<?php include('templates/nav.php'); ?> 
     <div class="container">
-        
         <?php
             
             $username = $_POST['username'];
@@ -27,5 +20,4 @@
         ?>
         
     </div>
-        
     <?php include('templates/footer.php'); ?>
