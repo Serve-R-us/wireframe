@@ -7,7 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <link href="images/favicon.ico" rel="shortcut icon" type="images/favicon.ico" />
 
     <title>Trick or Eat 2016</title>
         <?php include('config/js.php'); ?>

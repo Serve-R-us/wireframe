@@ -22,7 +22,7 @@
             
                 //$member_query = "SELECT * FROM users WHERE user = '$_POST[username]' AND password = SHA1('$_POST[password]')";
                 
-                $member_query = "INSERT INTO wireframe.users (id, user, password, email, role) VALUES (NULL, '{$username}', '{$password}', '{$email}', 2)";
+                $member_query = "INSERT INTO users (id, user, password, email, role) VALUES (NULL, '{$username}', '{$password}', '{$email}', 2)";
                 $member_result = mysqli_query($dbc, $member_query);
                 
                 if ($member_result) {

@@ -13,7 +13,7 @@
             
             echo "{$username} : {$password} <br />";
             
-                $member_query = "SELECT * FROM users WHERE user = '$_POST[username]' AND password = SHA1('$_POST[password]')";
+                $member_query = "SELECT * FROM serverus.users WHERE user = '$_POST[username]' AND password = SHA1('$_POST[password]')";
                 $member_result = mysqli_query($dbc, $member_query);
                 
                 if ($member_result) {
