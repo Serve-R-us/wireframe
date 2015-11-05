@@ -10,7 +10,7 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Trick or Eat 2016</title>
-        <?php include('config/js.php'); ?>
-        <?php include('config/css.php'); ?>
+      <?php include('config/js.php'); ?>
+      <?php include('config/css.php'); ?>
     
   </head>
