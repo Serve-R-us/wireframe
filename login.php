@@ -1,4 +1,4 @@
-<?php include('/config/connection.php'); ?>
+<?php include('config/connection.php'); ?>
 <?php include('templates/header.php'); ?>
 <?php include('templates/nav.php');?>
   <!-- Content -->
