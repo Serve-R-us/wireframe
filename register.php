@@ -1,12 +1,6 @@
-<?php include('/config/connection.php'); ?>
+<?php include('config/connection.php'); ?>
 <?php include('templates/header.php'); ?>
 <?php include('templates/nav.php'); ?>
-
-<?php
-    include('config/connection.php');
-?>
-    <?php include('templates/header.php'); ?>
-    <?php include('templates/nav.php'); ?>
     <div class="container">
         
         <?php
@@ -15,7 +9,12 @@
             $email = $_POST['email'];   
             $password = $_POST['password'];
             $confirm_password = $_POST['confirm-password'];
-            $role = $_POST['role'];
+            if ($_POST['role'] == 'team-captain') {
+                $role = 1;
+            }
+            else {
+                $role = 0;
+            }
             
             echo "Username: {$username}
                   Email: {$email} 
@@ -25,13 +24,17 @@
             
                 //$member_query = "SELECT * FROM users WHERE user = '$_POST[username]' AND password = SHA1('$_POST[password]')";
                 
-                $member_query = "INSERT INTO users (id, user, password, email, role) VALUES (NULL, '{$username}', '{$password}', '{$email}', 2)";
+                $member_query = "INSERT INTO users (id, user, password, email, role) VALUES (NULL, '{$username}', '{$password}', '{$email}', $role)";
                 $member_result = mysqli_query($dbc, $member_query);
                 
                 if ($member_result) {
                     echo "This ran?";
                     $_SESSION['username'] = $username;
-                    //header('Location: index.php');
+                    if ($role == 0) {
+                        header('Location: index.php');
+                    } else {
+                        header('Location: team_signup.php');
+                    }
                 }
         ?>
         

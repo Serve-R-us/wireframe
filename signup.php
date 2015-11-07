@@ -2,26 +2,31 @@
 <?php include('templates/header.php'); ?>
 <?php include('templates/nav.php');?>
 
+
+
 <!-- Content -->
 <div class="container">
 
-  <form class="form-signin" action="register.php" method="post">
+  <form class="form-signin" id="signupForm" method="post" action="register.php" autocomplete="off">
     <h2 class="form-signin-heading">Please register an account</h2>
     
-    <!-- User name, emails, and passwords -->
+    <!-- User name -->
     <label for="inputUsername" class="sr-only">User Name</label>
-    <input type="text" class="form-control" name="username" id="inputUsername" placeholder="Username">
+    <input type="text" class="form-control" name="username" id="username" placeholder="Username">
     
+    <!-- email -->
     <label for="inputEmail" class="sr-only">Email Address</label>
-    <input type="email" class="form-control" name="email" id="inputEmail" placeholder="email@email.com">
+    <input type="email" class="form-control" name="email" id="email" placeholder="email@email.com">
     
     <br>
     
+    <!-- Password -->
     <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" class="form-control" name="password" id="inputPassword3" placeholder="Password">
+    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
     
+    <!-- Confirm Password -->
     <label for="inputConfirmPassword" class="sr-only">Confirm Password</label>
-    <input type="password" class="form-control" name="confirm-password" id="inputPassword4" placeholder="Confirm Password">
+    <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
     
     <!-- Radio button for signing up as team captain/participant -->
     <hr>
@@ -43,5 +48,6 @@
   </form>
 
 </div> <!-- /container -->
+
 
 <?php include('templates/footer.php') ?>
