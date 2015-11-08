@@ -1,4 +1,4 @@
-$().ready(function() {
+$( document ).ready(function() {
     $("#signupForm").validate({
         rules: {
             firstname: "required",
