@@ -7,52 +7,47 @@
 
 <!-- Content -->
 <div class="container">
-    <!--<div class="sign-up">-->
-        
-        
-        <form class="form-signin" id="teamForm" method="post" action="process.php#team" autocomplete="off">
-            <h2 class="form-signin-heading">Please create your team</h2>
-            
-            <!-- User name -->
-            <label for="inputUsername" class="sr-only">Team Name</label>
-            <input type="text" class="form-control" name="teamname" id="teamname" placeholder="Team Name">
-            
-            <!-- Accessibility needs -->
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" name="accessibility" id="accessibility"> A team member on my team has accessibility needs
-              </label>
-            </div>
+  <form class="form-signin" id="signupForm" method="post" action="register.php" autocomplete="off">
+      <h2 class="form-signin-heading">Please create your team</h2>
+      
+      <!-- User name -->
+      <label for="inputUsername" class="sr-only">Team Name</label>
+      <input type="text" class="form-control" name="username" id="username" placeholder="Team Name">
+      
+      <!-- Accessibility needs -->
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> A team member on my team has accessibility needs
+        </label>
+      </div>
 
-            
-            <h2 class="form-signin-heading">Invite Team Members</h2>
-            <hr>
-            <h4 class="form-signin-heading">Email of participant 1:</h2>
-            <!-- email -->
-            <label for="inputEmail" class="sr-only">Email Address</label>
-            <input type="email" class="form-control" name="email1" id="email1" placeholder="email@email.com">
-            
-            <h4 class="form-signin-heading">Email of participant 2:</h2>
-            <!-- email -->
-            <label for="inputEmail" class="sr-only">Email Address</label>
-            <input type="email" class="form-control" name="email2" id="email2" placeholder="email@email.com">
-            
-            <h4 class="form-signin-heading">Email of participant 3:</h2>
-            <!-- email -->
-            <label for="inputEmail" class="sr-only">Email Address</label>
-            <input type="email" class="form-control" name="email3" id="email3" placeholder="email@email.com">
-            
-            <h4 class="form-signin-heading">Email of participant 4:</h2>
-            <!-- email -->
-            <label for="inputEmail" class="sr-only">Email Address</label>
-            <input type="email" class="form-control" name="email3" id="email3" placeholder="email@email.com">
-            
-            <br>
-            
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Register Now</button>
-        </form>
-
-    <!--</div> -->
+      
+      <h2 class="form-signin-heading">Invite Team Members</h2>
+      <hr>
+      <h4 class="form-signin-heading">Email of participant 1:</h2>
+      <!-- email -->
+      <label for="inputEmail" class="sr-only">Email Address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="email@email.com">
+      
+      <h4 class="form-signin-heading">Email of participant 2:</h2>
+      <!-- email -->
+      <label for="inputEmail" class="sr-only">Email Address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="email@email.com">
+      
+      <h4 class="form-signin-heading">Email of participant 3:</h2>
+      <!-- email -->
+      <label for="inputEmail" class="sr-only">Email Address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="email@email.com">
+      
+      <h4 class="form-signin-heading">Email of participant 4:</h2>
+      <!-- email -->
+      <label for="inputEmail" class="sr-only">Email Address</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="email@email.com">
+      
+      <br>
+      
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register Now</button>
+  </form>
 </div> <!-- /container -->
 
 
