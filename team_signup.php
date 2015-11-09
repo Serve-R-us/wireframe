@@ -7,7 +7,7 @@
 
 <!-- Content -->
 <div class="container">
-  <form class="form-signin" id="signupForm" method="post" action="register.php" autocomplete="off">
+  <form class="form-signin" id="signupForm" method="post" action="process.php?id=team" autocomplete="off">
       <h2 class="form-signin-heading">Please create your team</h2>
       
       <!-- User name -->
