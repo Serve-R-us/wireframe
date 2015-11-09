@@ -1,0 +1,12 @@
+.maps-section {
+  margin-bottom: 30px;
+}
+
+.confirm {
+  margin-top: 30px;
+}
+
+.list-group panel.active {
+  background-color: #030;;
+  border-color: #aed248;
+}
