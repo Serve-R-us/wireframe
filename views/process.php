@@ -1,7 +1,3 @@
-<?php include('config/connection.php'); ?>
-<?php include('templates/header.php'); ?>
-<?php include('templates/nav.php'); ?>
-
     <div class="container">
         
         <?php
@@ -39,7 +35,7 @@
                 
                 if ($team_result) {
                   echo "This ran?";
-                  //header('Location: index.php');
+                  header('Location: index.php');
                 }
             
             // proccess a user sign up
@@ -61,4 +57,3 @@
         
     </div>
         
-    <?php include('templates/footer.php'); ?>

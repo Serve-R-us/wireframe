@@ -1,14 +1,10 @@
-<?php include('config/connection.php'); ?>
-<?php include('templates/header.php'); ?>
-<?php include('templates/nav.php');?>
-
 <!-- Sign up javascript -->
 <script src="javascript/signup_form.js"></script>
 
 <!-- Content -->
 <div class="container">
 
-  <form class="form-signin" id="signupForm" method="post" action="register.php" autocomplete="off">
+  <form class="form-signin" id="signupForm" method="post" action="?page=register" autocomplete="off">
     <h2 class="form-signin-heading">Please register an account</h2>
     
     <!-- User name -->
@@ -49,6 +45,3 @@
   </form>
 
 </div> <!-- /container -->
-
-
-<?php include('templates/footer.php') ?>

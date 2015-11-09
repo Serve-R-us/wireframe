@@ -1,7 +1,3 @@
-<?php include('config/connection.php'); ?>
-<?php include('templates/header.php'); ?>
-<?php include('templates/nav.php'); ?>
-
 <div class="container">
   <?php      
     $username = $_POST['username'];
@@ -32,10 +28,8 @@
       if ($role == 0) {
         header('Location: index.php');
       } else {
-        header('Location: team_signup.php');
+        header('Location: ?page=team_signup');
       }
     }
   ?>        
 </div>
-        
-<?php include('templates/footer.php'); ?>
