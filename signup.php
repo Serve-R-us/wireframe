@@ -2,7 +2,8 @@
 <?php include('templates/header.php'); ?>
 <?php include('templates/nav.php');?>
 
-
+<!-- Sign up javascript -->
+<script src="javascript/signup_form.js"></script>
 
 <!-- Content -->
 <div class="container">

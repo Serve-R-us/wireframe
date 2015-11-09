@@ -23,7 +23,7 @@
           <div class="form-group">
             <label for="inputName3" class="col-sm-2 control-label">Name</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputPassword3" placeholder="John Does">
+              <input type="text" class="form-control" id="inputPassword3" placeholder="">
             </div>
           </div>
           
