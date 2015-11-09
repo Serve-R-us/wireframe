@@ -12,7 +12,7 @@
       
       <!-- User name -->
       <label for="inputUsername" class="sr-only">Team Name</label>
-      <input type="text" class="form-control" name="username" id="username" placeholder="Team Name">
+      <input type="text" class="form-control" name="teamname" id="teamname" placeholder="Team Name">
       
       <!-- Accessibility needs -->
       <div class="checkbox">

@@ -5,7 +5,7 @@
   <div class="container">
       
     <!-- Log in forum -->
-    <form class="form-signin" action="process.php" method="post">
+    <form class="form-signin" action="process.php?id=login" method="post">
       <h2 class="form-signin-heading">Please sign in</h2>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input type="text" class="form-control" name="username" id="inputUsername3" placeholder="Username">
