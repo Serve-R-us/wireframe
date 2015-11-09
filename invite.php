@@ -2,7 +2,7 @@
 <?php include('templates/header.php'); ?>
 <?php include('templates/nav.php');?>
     
-  <div class="container">
+  <div class="container"> 
       
     <!-- php if statement -->
     <?php if (isset($_SESSION['username'])) { ?> 

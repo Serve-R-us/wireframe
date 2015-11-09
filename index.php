@@ -8,30 +8,70 @@
     <?php if (!isset($_SESSION['username'])) { ?>
     <!-- Main component for a primary marketing message or call to action -->
     <div class="center">
-      <a href="login.php"><button type="button" class="btn btn-primary btn-lg">Login</button></a>
+      <a href="login.php"><button type="button" class="btn btn-primary">Login</button></a>
       <div class="divider"/></div>
-      <a href="signup.php"><button type="button" class="btn btn-primary btn-lg">Sign Up</button></a>
+      <a href="signup.php"><button type="button" class="btn btn-primary">Sign Up</button></a>
     </div>
     
     <!-- php else statement -->
-    <?php } else {
-            echo "<p>". $_SESSION['username'] . "/ <a href='account.php'>My Account</a> / <a href='logout.php'>Log out</a>" . "</p>";
-          }
-    ?>
+    <?php } else { ?>
+            <div class align="right">
+              <a href="profile.php"><button type="button" class="btn btn-primary btn-sm">My Profile</button></a>
+              <div class="divider"/></div>
+              <a href="team.php"><button type="button" class="btn btn-primary btn-sm">My Team</button></a>
+              <div class="divider"/></div>
+              <a href="logout.php"><button type="button" class="btn btn-primary btn-sm">Sign Out</button></a>
+            </div>
+
+    <?php } ?>
         
-        
-    <!-- Jumbotron -->
-    <div class="jumbotron">  
-      <h1>Trick or Eat <?php echo 'test'; ?></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum porttitor nisl, sed luctus nibh ornare id. Suspendisse vel nibh aliquet augue condimentum egestas auctor at enim. Phasellus placerat justo nunc, nec finibus nunc porttitor id. Morbi arcu diam, aliquet ac neque sed, porta varius ipsum. Curabitur imperdiet vitae magna nec congue. Nam in consectetur nunc. Aenean quis leo at libero egestas pulvinar.</p>
-      <p>Suspendisse eget ante id quam scelerisque vulputate vel eu massa. Sed elit dolor, ultricies in tellus ac, tempor tincidunt lacus. Nam est elit, rutrum sed tellus ac, hendrerit fringilla metus. Sed rhoncus erat vitae cursus pretium.</p>
-      <p>
-        <a class="btn btn-lg btn-primary" href="about.php" role="button">View more information &raquo;</a>
-      </p>
+
+        <!-- Jumbotron -->
+    </br>
+    <div class="jumbotron"> 
+      <div class="row">
+
+        <div class="col-md-9">
+          <h2>What is Trick Or Eat?</h2>
+          <p>Trick or Eat is a youth-led national event that puts a new spin on the annual night of giving – Halloween! Thousands of Trick or Eaters across Canada, go door to door to collect food for local community organizations, and funds to support students advocating for good food for all. Trick or Eat is a national day of action, for young people to come together and actively show that they want to see a difference on the issue of hunger on their campuses and in their communities.</p>
+          <p></p>
+          <p>
+            <a class="btn btn-primary" href="about.php" role="button">Learn more</a>
+          </p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="center">
+            <img src="images/logo.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+          <div class="jumbotron">  
+            <h3>Other stuff</h3>
+            <p1>Put anything else here</p1>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="jumbotron">  
+            <h3>Did You Know?</h3>
+            </br><p1>Serve R Us is the superior team in CIS3750.</p1>
+            </br></br><p1>1 in 8 Canadian households experience food insecurity, meaning they don't have sufficient access to the food they need to meet their dietary needs.</p1>
+            </br></br><p1>Almost 850,000 Canadians receive food from a food bank each month.</p1>
+            </br></br><p1>Since 2008, food bank use has increased in every province and territory, except Newfoundland.</p1>
+            </br></br><p1>More than a third of those helped by food banks are children.</p1>
+            </br></br><p1>Healthcare costs are considerably greater for households facing food insecurity than those that are food secure.</p1>
+          </div>
+        </div>
     </div>
       
       
-    <!-- Content section -->
+    <!-- Content section 
     <div class="row marketing">
       <div class="col-lg-6">
         <h4>Subheading</h4>
@@ -39,9 +79,6 @@
 
         <h4>Subheading</h4>
         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <h4>Subheading</h4>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
       </div>
 
       <div class="col-lg-6">
@@ -50,18 +87,8 @@
 
         <h4>Subheading</h4>
         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-        <h4>Subheading</h4>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
       </div>
-    </div>
-      
-    <!-- footer image -->
-    <div>
-      <div class="center">
-        <img src="images/logo.png""/>
-      </div>
-    </div>
+    </div> -->
       
   </div> <!-- /container -->
 
