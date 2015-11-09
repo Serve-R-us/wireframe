@@ -9,6 +9,8 @@
             $email = $_POST['email'];   
             $password = $_POST['password'];
             $confirm_password = $_POST['confirm-password'];
+            
+            $_SESSION['username'] = $username;
             if ($_POST['role'] == 'team-captain') {
                 $role = 1;
             }
