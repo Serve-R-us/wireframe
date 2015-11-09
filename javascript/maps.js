@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  var innerHTML;
-
   /* route type selection */
   $(".route-type").on("click","> a", function(e) {
     /* hide error on new route type */
@@ -43,11 +41,28 @@ $(document).ready(function() {
 
   /* confirm button */
   $(".confirm").click(function() {
+    /* check if selected route is full */
     if($(".list-group").find(".active").hasClass("full")) {
       $("#error-full").show();
+      return;
     }
-    else {
+    /* check if route is not accessibile */
+    if(!($(".list-group").find(".active").hasClass("accessible"))) {
+      $('#modal-warning').modal("show");
+      return;
+    }
+    /* check if a route is selected */
+    if($(".list-group").find(".active").hasClass("active")) {
       $('#modal-success').modal("show");
     }
+    /* else display error */
+    else {
+      $('#modal-error').modal("show");
+    }
+  });
+
+  /* continue button from warning */
+  $(".warning-continue").click(function() {
+    $('#modal-success').modal("show");
   });
 });
