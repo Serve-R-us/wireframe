@@ -3,7 +3,7 @@
 
 <!-- Content -->
 <div class="container">
-  <form class="form-signin" id="signupForm" method="post" action="?page=process&id=team" autocomplete="off">
+  <form class="form-signin" id="teamForm" method="post" action="?page=process&id=team" autocomplete="off">
       <h2 class="form-signin-heading">Please create your team</h2>
       
       <!-- User name -->
@@ -23,22 +23,22 @@
       <h4 class="form-signin-heading">Email of participant 1:</h2>
       <!-- email -->
       <label for="inputEmail" class="sr-only">Email Address</label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="email@email.com">
+      <input type="email" class="form-control" name="email1" id="email1" placeholder="email@email.com">
       
       <h4 class="form-signin-heading">Email of participant 2:</h2>
       <!-- email -->
       <label for="inputEmail" class="sr-only">Email Address</label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="email@email.com">
+      <input type="email" class="form-control" name="email2" id="email2" placeholder="email@email.com">
       
       <h4 class="form-signin-heading">Email of participant 3:</h2>
       <!-- email -->
       <label for="inputEmail" class="sr-only">Email Address</label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="email@email.com">
+      <input type="email" class="form-control" name="email3" id="email3" placeholder="email@email.com">
       
       <h4 class="form-signin-heading">Email of participant 4:</h2>
       <!-- email -->
       <label for="inputEmail" class="sr-only">Email Address</label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="email@email.com">
+      <input type="email" class="form-control" name="email3" id="email3" placeholder="email@email.com">
       
       <br>
       

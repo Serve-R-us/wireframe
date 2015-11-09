@@ -31,11 +31,21 @@
                 $team_query = "INSERT INTO teams (id, teamname, teamcaptainid, accessibility) VALUES (NULL, '$teamname', $teamcaptainid[id], $accessibility)";
                 $team_result = mysqli_query($dbc, $team_query);
                 
+                // set team id for current member
+                $teamid_query = "SELECT id FROM teams WHERE teamcaptainid = '$teamcaptainid[id]'";
+                $teamid_result = mysqli_query($dbc, $teamid_query);
+                $teamid = mysqli_fetch_assoc($teamid_result);
+                
+                echo 'Team id: '.$teamid['id'];
+                
+                $update_teamid = "UPDATE users SET teamid = '$teamid[id]' WHERE users.user = '$_SESSION[username]'";
+                $updateteamid_result = mysqli_query($dbc, $update_teamid);
+                
                 echo $team_query;
                 
                 if ($team_result) {
                   echo "This ran?";
-                  header('Location: index.php');
+                  //header('Location: index.php');
                 }
             
             // proccess a user sign up
