@@ -179,7 +179,7 @@
     <!-- Route selection confirmation -->
     <div class="confirm">
       <span class="glyphicon glyphicon-asterisk"></span> Indicates accessible route.
-      <button type="button" class="btn btn-success pull-right page-scroll">Confirm</button>
+      <button type="button" class="btn btn-success pull-right page-scroll btn-confirm">Confirm</button>
     </div>
   </div>
 
@@ -202,7 +202,7 @@
           You have successfully registered for your selected route.
         </div>
         <div class="modal-footer">
-          <a href="teams.php" type="button" class="btn btn-primary">Return to Team Page</a>
+          <a href="index.php?=team" type="button" class="btn btn-primary">Return to Team Page</a>
         </div>
       </div>
     </div>

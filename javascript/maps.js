@@ -40,7 +40,7 @@ $(document).ready(function() {
   });
 
   /* confirm button */
-  $(".confirm").click(function() {
+  $(".btn-confirm").click(function() {
     /* check if selected route is full */
     if($(".list-group").find(".active").hasClass("full")) {
       $("#error-full").show();
