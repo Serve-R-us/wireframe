@@ -35,7 +35,8 @@
         <span class="badge">Full 5/5</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>1.</strong> Route name</li>
+          <li><strong>1.</strong> Route A</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 4km</li>
         </ul>
       </button>
@@ -48,7 +49,8 @@
         <span class="badge">0/6</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>2.</strong> Route name</li>
+          <li><strong>2.</strong> Route B</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 3km</li>
           <!-- Accessible icon -->
           <li><span class="glyphicon glyphicon-asterisk"></span></li>
@@ -58,7 +60,8 @@
         <span class="badge">1/7</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>3.</strong> Route name</li>
+          <li><strong>3.</strong> Route C</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 4km</li>
         </ul>
       </button>
@@ -70,7 +73,8 @@
         <span class="badge">0/4</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>4.</strong> Route name</li>
+          <li><strong>4.</strong> Route D</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 1km</li>
           <!-- Accessible icon -->
           <li><span class="glyphicon glyphicon-asterisk"></span></li>
@@ -84,7 +88,8 @@
         <span class="badge">4/5</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>1.</strong> Route name</li>
+          <li><strong>1.</strong> Route E</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 4km</li>
         </ul>
       </button>
@@ -96,7 +101,8 @@
         <span class="badge">0/6</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>2.</strong> Route name</li>
+          <li><strong>2.</strong> Route F</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 3km</li>
         </ul>
       </button>
@@ -104,7 +110,8 @@
         <span class="badge">2/4</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>3.</strong> Route name</li>
+          <li><strong>3.</strong> Route G</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 1km</li>
         </ul>
       </button>
@@ -120,7 +127,8 @@
         <span class="badge">0/5</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>1.</strong> Route name</li>
+          <li><strong>1.</strong> Route H</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 3km</li>
         </ul>
       </button>
@@ -128,7 +136,8 @@
         <span class="badge">0/6</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>2.</strong> Route name</li>
+          <li><strong>2.</strong> Route I</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 2km</li>
         </ul>
       </button>
@@ -136,7 +145,8 @@
         <span class="badge">Full 4/4</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>3.</strong> Route name</li>
+          <li><strong>3.</strong> Route J</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 1km</li>
           <!-- Accessible icon -->
           <li><span class="glyphicon glyphicon-asterisk"></span></li>
@@ -150,7 +160,8 @@
         <span class="badge">0/7</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>4.</strong> Route name</li>
+          <li><strong>4.</strong> Route K</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 1km</li>
           <!-- Accessible icon -->
           <li><span class="glyphicon glyphicon-asterisk"></span></li>
