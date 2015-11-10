@@ -1,7 +1,4 @@
-<?php include('config/connection.php'); ?>
-<?php include('templates/header.php'); ?>
-<?php include('templates/nav.php');?>
-    
+
   <div class="container"> 
       
     <!-- php if statement -->
@@ -11,13 +8,7 @@
     
     } ?>
       
-    <div class align="right">
-      <a href="profile.php"><button type="button" class="btn btn-primary btn-sm">My Profile</button></a>
-      <div class="divider"/></div>
-      <a href="team.php"><button type="button" class="btn btn-primary btn-sm">My Team</button></a>
-      <div class="divider"/></div>
-      <a href="logout.php"><button type="button" class="btn btn-primary btn-sm">Sign Out</button></a>
-    </div>
+    <?php include('templates/account_buttons.php'); ?>
 
     <div class>
       <h1>Member Invite</h1>
@@ -50,9 +41,7 @@
     </div>
 
     <div class="left">
-      <a href="processInvite.php"><button type="button" class="btn btn-primary">Send Invites</button></a>
+      <a href="?page=processInvite"><button type="button" class="btn btn-primary">Send Invites</button></a>
     </div>
 
   </div> <!-- /container -->
-
-<?php include('templates/footer.php') ?>
