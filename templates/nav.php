@@ -10,7 +10,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+
+          <a class="navbar-brand page-scroll" href="#page-top">
+              <img src="images/logo.png" style="max-width:30px;height:auto;margin-top:-3px;">
+          </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">

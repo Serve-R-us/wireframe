@@ -1,8 +1,8 @@
 
     <footer class="footer">
       <div class="container">
-      <p>&copy; Company 2014</p>
-      </div> <!-- /container -->
+        <p>&copy; Serve R Us 2015</p>
+      </div>
     </footer>
 
     <!-- Bootstrap core JavaScript
