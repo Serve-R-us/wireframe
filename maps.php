@@ -202,7 +202,7 @@
           You have successfully registered for your selected route.
         </div>
         <div class="modal-footer">
-          <a href="index.php?=team" type="button" class="btn btn-primary">Return to Team Page</a>
+          <a href="index.php?page=process&id=map" type="button" class="btn btn-primary">Return to Team Page</a>
         </div>
       </div>
     </div>

@@ -3,6 +3,15 @@
 <?php include('templates/nav.php');?>
 
 
-<?php include('views/'.$page.'.php');?>
+<?php
+    error_reporting(0);
+    if(include('views/'.$page.'.php'))
+    {
+        
+    } else {
+        
+        include('views/404.php');
+    }
+?>
 
 <?php include('templates/footer.php') ?>

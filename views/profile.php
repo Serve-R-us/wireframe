@@ -31,7 +31,7 @@
                   
                   <div class="col-xs-6 col-md-8">
                     
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" action="?page=update" method="post">
                         <div class="username-heading">
                             <h4>Username: <?php echo $_SESSION['username']; ?></h4>
                         </div>
@@ -62,19 +62,13 @@
                   
                 </div>
                 
-                <div class="row">
-                  <div class="col-xs-12 col-md-12">
-                    <h2>Team Summary</h2>
-                    <hr>
-                    <h4>Name: Team Name</h4>
-                    <h4>Members: </h4>
-                    <hr>
-                  </div>
-                </div>
+                
             </div>
             
           <?php }
     ?>
     
   </div> <!-- /container -->
+  
+  <?php include('views/team.php') ?>
     
