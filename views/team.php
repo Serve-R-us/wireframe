@@ -23,56 +23,59 @@
                 <hr>
                 
                 <div class="row">
-                  <div class="col-xs-12 col-md-4">
-                          <img src="images/profile.png" class="profile-image"/>
-                      
-                  </div>
-                  
-                  <?php
-                    $user_query =
-                    $team_query = "SELECT * FROM teams WHERE id = "
-                  
-                  ?>
-                  <div class="col-xs-6 col-md-8">
                     
-                    <form class="form-horizontal">
-                        <div class="username-heading">
-                            <h4>Username: <?php echo $_SESSION['username']; ?></h4>
+                  <!-- SQL calls and such -->
+                  <?php
+                    $team_query = "SELECT * FROM teams WHERE id = '$_SESSION[teamid]'";
+                    $team_result = mysqli_query($dbc, $team_query);
+                    $team_info = mysqli_fetch_assoc($team_result);
+                    
+                    $team_members_query = "SELECT * FROM users JOIN teams ON users.teamid = teams.id WHERE teams.id = '$_SESSION[teamid]'";
+                    $team_members_result = mysqli_query($dbc, $team_members_query);
+                    
+                  ?>
+                  <div class="col-xs-12 col-md-4">
+                    
+                        <div class="team-heading">
+                            <h4>Name: </h4> <?php echo $team_info['teamname']; ?>
+                            <h4>Team Captain: </h4> <?php echo $_SESSION['username']; ?>
+                            <h4>Members: </h4>
+                            <?php while( $team_members = mysqli_fetch_assoc($team_members_result)) {
+                                echo $team_members['user'];
+                                echo '<br>';
+                            }?>
+                            <br>
+                            <a href="?page=invite.php"><button type="button" class="btn btn-primary btn-lg">Invite Members</button></a> 
+
                         </div>
-                      
-                      
-                      <div class="form-group">
-                        <label for="inputName3" class="col-sm-2 control-label">Name</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputPassword3" placeholder="">
-                        </div>
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail3" placeholder="doesjohn@gmail.com">
-                        </div>
-                      </div>
-                      
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="btn btn-primary btn-lg">Update Information</button>
-                        </div>
-                      </div>
-                    </form>
-                      
-                  </div>
+                        
                   
+                    
+                        
+                      
+                    
+                    </div>
+                    
+                    
+                    <div class="col-xs-6 col-md-8">
+                        <a href="?page=donate.php"><button type="button" class="btn btn-primary btn-lg">Donate to Team</button></a> 
+                        <h4>Total Money Raised:</h4>
+                    </div>
+
                 </div>
                 
                 <div class="row">
                   <div class="col-xs-12 col-md-12">
-                    <h2>Team Summary</h2>
-                    <hr>
-                    <h4>Name: Team Name</h4>
-                    <h4>Members: </h4>
-                    <hr>
+                        <div class="team-heading">
+                        <h4>Team's Current Route</h4>
+                        
+                        <a href="maps.php"><button type="button" class="btn btn-primary btn-lg">Team Route</button></a> 
+                        <br>
+                        <br>
+                        <a href="maps.php"><button type="button" class="btn btn-primary btn-lg">Delete Team</button></a> 
+
+                    
+                    </div>
                   </div>
                 </div>
             </div>

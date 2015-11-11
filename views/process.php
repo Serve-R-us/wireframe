@@ -45,10 +45,10 @@
                 
                 if ($team_result) {
                   echo "This ran?";
-                  //header('Location: index.php');
+                  header('Location: index.php?page=team');
                 }
             
-            // proccess a user sign up
+            // proccess a user login
             } else if (strcmp($page, 'login') == 0) {
                 $username = $_POST['username'];
                 $password = $_POST['password'];
@@ -57,8 +57,10 @@
             
                 $member_query = "SELECT * FROM serverus.users WHERE user = '$_POST[username]' AND password = SHA1('$_POST[password]')";
                 $member_result = mysqli_query($dbc, $member_query);
+                $member_info = mysqli_fetch_assoc($member_result);
                 
                 if ($member_result) {
+                    $_SESSION['teamid'] = $member_info['teamid'];
                     $_SESSION['username'] = $username;
                     header('Location: index.php');
                 }
