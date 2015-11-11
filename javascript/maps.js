@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  var innerHTML;
-
   /* route type selection */
   $(".route-type").on("click","> a", function(e) {
     /* hide error on new route type */
@@ -19,15 +17,15 @@ $(document).ready(function() {
     $(".items-driving").hide();
     /* show desired route type */
     if(e.target.id == "route-walking") {
-      $(".maps-google-content").html("<h1>Walking Map Here</h1>");
+      $(".maps-google-content").html("<h1>Walking Map Here</h1><p>Google Maps of routes will be displayed here.</p>");
       $(".items-walking").show();
     }
     if(e.target.id == "route-bus") {
-      $(".maps-google-content").html("<h1>Bus Map Here</h1>");
+      $(".maps-google-content").html("<h1>Bus Map Here</h1><p>Google Maps of routes will be displayed here.</p>");
       $(".items-bus").show();
     }
     if(e.target.id == "route-driving") {
-      $(".maps-google-content").html("<h1>Driving Map Here</h1>");
+      $(".maps-google-content").html("<h1>Driving Map Here</h1><p>Google Maps of routes will be displayed here.</p>");
       $(".items-driving").show();
     }
   });
@@ -42,12 +40,29 @@ $(document).ready(function() {
   });
 
   /* confirm button */
-  $(".confirm").click(function() {
+  $(".btn-confirm").click(function() {
+    /* check if selected route is full */
     if($(".list-group").find(".active").hasClass("full")) {
       $("#error-full").show();
+      return;
     }
-    else {
+    /* check if route is not accessibile */
+    if(!($(".list-group").find(".active").hasClass("accessible"))) {
+      $('#modal-warning').modal("show");
+      return;
+    }
+    /* check if a route is selected */
+    if($(".list-group").find(".active").hasClass("active")) {
       $('#modal-success').modal("show");
     }
+    /* else display error */
+    else {
+      $('#modal-error').modal("show");
+    }
+  });
+
+  /* continue button from warning */
+  $(".warning-continue").click(function() {
+    $('#modal-success').modal("show");
   });
 });

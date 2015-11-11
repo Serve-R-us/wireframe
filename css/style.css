@@ -115,3 +115,7 @@ fieldset[disabled] .form-control {
 fieldset[disabled] .form-control {
   cursor: not-allowed;
 }
+
+.footer {
+  height: 40px;
+}

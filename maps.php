@@ -35,9 +35,9 @@
         <span class="badge">Full 5/5</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>1.</strong> Route name</li>
+          <li><strong>1.</strong> Route A</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 4km</li>
-          <li><span class="glyphicon glyphicon-asterisk"></span></li>
         </ul>
       </button>
       <div class="collapse" id="teams1">
@@ -45,12 +45,14 @@
         <span class="list-group-item"><strong>Team A</strong></span>
         <span class="list-group-item"><strong>Team B</strong></span>
       </div>
-      <button class="btn btn-default list-group-item">
+      <button class="btn btn-default list-group-item accessible">
         <span class="badge">0/6</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>2.</strong> Route name</li>
+          <li><strong>2.</strong> Route B</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 3km</li>
+          <!-- Accessible icon -->
           <li><span class="glyphicon glyphicon-asterisk"></span></li>
         </ul>
       </button>
@@ -58,7 +60,8 @@
         <span class="badge">1/7</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>3.</strong> Route name</li>
+          <li><strong>3.</strong> Route C</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 4km</li>
         </ul>
       </button>
@@ -66,12 +69,15 @@
         <span class="list-group-item">Teams currently on this route:</span>
         <span class="list-group-item"><strong>Team C</strong></span>
       </div>
-      <button class="btn btn-default list-group-item">
+      <button class="btn btn-default list-group-item accessible">
         <span class="badge">0/4</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>4.</strong> Route name</li>
+          <li><strong>4.</strong> Route D</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 1km</li>
+          <!-- Accessible icon -->
+          <li><span class="glyphicon glyphicon-asterisk"></span></li>
         </ul>
       </button>
     </div>
@@ -82,7 +88,8 @@
         <span class="badge">4/5</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>1.</strong> Route name</li>
+          <li><strong>1.</strong> Route E</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 4km</li>
         </ul>
       </button>
@@ -94,7 +101,8 @@
         <span class="badge">0/6</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>2.</strong> Route name</li>
+          <li><strong>2.</strong> Route F</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 3km</li>
         </ul>
       </button>
@@ -102,7 +110,8 @@
         <span class="badge">2/4</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>3.</strong> Route name</li>
+          <li><strong>3.</strong> Route G</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 1km</li>
         </ul>
       </button>
@@ -118,7 +127,8 @@
         <span class="badge">0/5</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>1.</strong> Route name</li>
+          <li><strong>1.</strong> Route H</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 3km</li>
         </ul>
       </button>
@@ -126,16 +136,19 @@
         <span class="badge">0/6</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>2.</strong> Route name</li>
+          <li><strong>2.</strong> Route I</li>
+          <li><strong>Start Time:</strong> 6:30</li>
           <li><strong>Distance:</strong> 2km</li>
         </ul>
       </button>
-      <button href="#teams6" class="btn btn-default list-group-item full" data-toggle="collapse">
+      <button href="#teams6" class="btn btn-default list-group-item full accessible" data-toggle="collapse">
         <span class="badge">Full 4/4</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>3.</strong> Route name</li>
+          <li><strong>3.</strong> Route J</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 1km</li>
+          <!-- Accessible icon -->
           <li><span class="glyphicon glyphicon-asterisk"></span></li>
         </ul>
       </button>
@@ -143,12 +156,14 @@
         <span class="list-group-item">Teams currently on this route:</span>
         <span class="list-group-item"><strong>Team F</strong></span>
       </div>
-      <button class="btn btn-default list-group-item">
+      <button class="btn btn-default list-group-item accessible">
         <span class="badge">0/7</span>
         <ul class="list-inline">
           <li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></li>
-          <li><strong>4.</strong> Route name</li>
+          <li><strong>4.</strong> Route K</li>
+          <li><strong>Start Time:</strong> 5:30</li>
           <li><strong>Distance:</strong> 1km</li>
+          <!-- Accessible icon -->
           <li><span class="glyphicon glyphicon-asterisk"></span></li>
         </ul>
       </button>
@@ -164,7 +179,7 @@
     <!-- Route selection confirmation -->
     <div class="confirm">
       <span class="glyphicon glyphicon-asterisk"></span> Indicates accessible route.
-      <button type="button" class="btn btn-success pull-right page-scroll">Confirm</button>
+      <button type="button" class="btn btn-success pull-right page-scroll btn-confirm">Confirm</button>
     </div>
   </div>
 
@@ -175,8 +190,9 @@
     </div>
   </div>
 
+  <!-- Normally the modals would be dynamic but the laziness sake there is three modals -->
   <!-- Route confirmation modal -->
-  <div class="modal fade" id="modal-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal fade" id="modal-success" tabindex="-1" role="dialog" aria-labelledby="modal-success">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -186,8 +202,42 @@
           You have successfully registered for your selected route.
         </div>
         <div class="modal-footer">
+          <a href="index.php?=team" type="button" class="btn btn-primary">Return to Team Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Route error modal -->
+  <div class="modal fade" id="modal-error" tabindex="-1" role="dialog" aria-labelledby="modal-error">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Error!</h4>
+        </div>
+        <div class="modal-body">
+          Please select a route.
+        </div>
+        <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <a href="teams.php" type="button" class="btn btn-primary">Return to Team Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Route accessibility warning modal -->
+  <div class="modal fade" id="modal-warning" tabindex="-1" role="dialog" aria-labelledby="modal-warning">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Warning!</h4>
+        </div>
+        <div class="modal-body">
+          You have selected a route that does not meet you accessibility needs. Continue anyway?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <a type="button" class="btn btn-primary warning-continue" data-dismiss="modal">Continue</a>
         </div>
       </div>
     </div>
