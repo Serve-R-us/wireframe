@@ -14,6 +14,7 @@
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
+        <a href="index.php?page=forgot_password">Forgot password?</a>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
       </form>
     
