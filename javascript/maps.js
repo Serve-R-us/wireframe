@@ -17,15 +17,15 @@ $(document).ready(function() {
     $(".items-driving").hide();
     /* show desired route type */
     if(e.target.id == "route-walking") {
-      $(".maps-google-content").html("<h1>Walking Map Here</h1><p>Google Maps of routes will be displayed here.</p>");
+      $(".maps-google-content").html("<h1>Walking Map Here</h1><p>Google Maps example below, not active.</p><img src=\"images/busmap.jpg\">");
       $(".items-walking").show();
     }
     if(e.target.id == "route-bus") {
-      $(".maps-google-content").html("<h1>Bus Map Here</h1><p>Google Maps of routes will be displayed here.</p>");
+      $(".maps-google-content").html("<h1>Bus Map Here</h1><p>Google Maps example below, not active.</p><img src=\"images/busmap.jpg\">");
       $(".items-bus").show();
     }
     if(e.target.id == "route-driving") {
-      $(".maps-google-content").html("<h1>Driving Map Here</h1><p>Google Maps of routes will be displayed here.</p>");
+      $(".maps-google-content").html("<h1>Driving Map Here</h1><p>Google Maps example below, not active.</p><img src=\"images/busmap.jpg\">");
       $(".items-driving").show();
     }
   });

@@ -4,7 +4,7 @@
             // determine what information is being processed
             if (isset($_GET['id'])) {
                 $page = $_GET['id'];
-                echo $page;
+                //echo $page;
             } else {
                 echo "page was not set";
                 $page = null;
@@ -61,10 +61,40 @@
                 
                 if ($member_result) {
                     $_SESSION['teamid'] = $member_info['teamid'];
+                    echo 'team id being set: '.$_SESSION['teamid'];
                     $_SESSION['username'] = $username;
                     header('Location: index.php');
                 }
+            } else if (strcmp($page, 'invite') == 0) {
+                
+                if ((isset($_POST['email']) && (strcmp($_POST['email'], "") != 0))
+                            || (isset($_POST['username']) && (strcmp($_POST['username'], "") != 0 )) ) {
+                    //echo 'test email: '.$_POST['email'];
+                    //echo 'test username: '.$_POST['username'];
+                ?>
+                    <script>
+                          alert("succesfully sent invites");
+                    </script>
+                    <p>Redirecting to your team's page</p>
+                    <meta http-equiv="refresh" content="2;url=index.php?page=team">
+                <?php
+                } else { ?>
+                    <script>
+                          alert("no emails or usernames sent!");
+                    </script>
+                    <p>Redirecting to your team's page</p>
+                    <meta http-equiv="refresh" content="2;url=index.php?page=team">
+                <?php }
+                //header('Location: ?page=team');
+            } else if (strcmp($page, 'map') == 0) {
+                  $route_query = "UPDATE teams SET route = 1 WHERE id = $_SESSION[teamid]";
+                  $route_result = mysqli_query($dbc, $route_query);
+                  
+                  echo 'query: '.$route_query;
+                  
+                  header('Location: index.php?page=team');
             }
+                
         ?>
         
     </div>

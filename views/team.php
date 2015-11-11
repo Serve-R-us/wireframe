@@ -45,38 +45,48 @@
                                 echo '<br>';
                             }?>
                             <br>
-                            <a href="?page=invite.php"><button type="button" class="btn btn-primary btn-lg">Invite Members</button></a> 
+                            <a href="?page=invite"><button type="button" class="btn btn-primary btn-lg">Invite Members</button></a> 
 
                         </div>
-                        
-                  
-                    
-                        
-                      
-                    
                     </div>
                     
                     
                     <div class="col-xs-6 col-md-8">
-                        <a href="?page=donate.php"><button type="button" class="btn btn-primary btn-lg">Donate to Team</button></a> 
-                        <h4>Total Money Raised:</h4>
+                        
+                        <div class="col-xs-12 col-md-12">
+                            <div class="team-heading">
+                                <h4>Team's Current Route</h4>
+                                
+                                <?php
+                                    if ($team_info['route'] == 1) { ?>
+                                        
+                                            <img src="images/busmap_thumb.jpg" /><br><br>
+                                        
+                                    <?php } else {
+                                        echo '<p>No current route selected</p></br>';
+                                    }
+                                ?>
+                                
+                                <a href="maps.php"><button type="button" class="btn btn-primary btn-lg">Team Route</button></a> 
+                                <br>
+                                <br>        
+                            
+                            </div>
+                          </div>
+                        
                     </div>
 
                 </div>
-                
+                <hr>
                 <div class="row">
-                  <div class="col-xs-12 col-md-12">
-                        <div class="team-heading">
-                        <h4>Team's Current Route</h4>
-                        
-                        <a href="maps.php"><button type="button" class="btn btn-primary btn-lg">Team Route</button></a> 
-                        <br>
-                        <br>
-                        <a href="maps.php"><button type="button" class="btn btn-primary btn-lg">Delete Team</button></a> 
+                    <div class="team-heading">
+                        <div class="col-xs-12 col-md-12">
+                            <h4>Total Money Raised:</h4>
+                            <a href="?page=donate.php"><button type="button" class="btn btn-primary btn-lg">Donate to Team</button></a> 
+                            <a href="index.php?page=delete"><button type="button" class="btn btn-primary btn-lg">Delete Team</button></a> 
 
-                    
+                        </div>
                     </div>
-                  </div>
                 </div>
             </div>
             
